@@ -21,3 +21,9 @@ var app = {
 };
 
 app.initialize();
+
+// ----- Functions -------------------------------------------------------------
+
+function tabview_switch(TabViewId, id) { tabview_aux(TabViewId, id); }
+
+function tabview_initialize(TabViewId) { tabview_aux(TabViewId,  1); }

@@ -1,0 +1,38 @@
+<html>
+<head>
+<script type="text/javascript">
+var image1 = new Image()
+image1.src = "img/ctg1.jpg"
+var image2 = new Image()
+image2.src = "img/ctg2.jpg"
+var image3 = new Image()
+image3.src = "img/ctg3.jpg"
+var image4 = new Image()
+image4.src = "img/ctg4.jpg"
+var image5 = new Image()
+image5.src = "img/ctg5.jpg"
+var image6 = new Image()
+image6.src = "img/ctg6.jpg"
+var image7 = new Image()
+image7.src = "img/ctg7.jpg"
+var image8 = new Image()
+image8.src = "img/ctg8.jpg"
+</script>
+</head>
+<body>
+<p><img src="img/ctg1.jpg" width="500" height="300" name="slide" style="image-orientation: 90deg;" /></p>
+<script type="text/javascript">
+        var step=1;
+        function slideit()
+        {
+            document.images.slide.src = eval("image"+step+".src");
+            if(step<8)
+                step++;
+            else
+                step=1;
+            setTimeout("slideit()",2500);
+        }
+        slideit();
+</script>
+</body>
+</html>
