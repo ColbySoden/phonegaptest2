@@ -1,17 +1,11 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="css/styles.css">
-<style type="text/js">
-function draw() {
-  var ctx = (a canvas context);
-  ctx.canvas.width  = window.innerWidth;
-  ctx.canvas.height = window.innerHeight;
-  //...drawing code...
-}
-</style>
-window.onload = draw();
 </head>
 <body>
+<div id="background">
+    <img src="img/ctg-bg.png" class="stretch" alt="" />
+</div>
 <div style="position: absolute; left: 0px; top: 50%;">
 <table border="0" width="100%">
 
@@ -57,12 +51,6 @@ window.onload = draw();
 <script src="lib/jq.innerHeightuery-1.8.2.min.js"></script>
 <script src="js/storage/memory-store.js"></script>
 <script src="js/main.js"></script>
-<style type="text/css">
-body { 
-background-image:url('img/ctg-bg.png');
-background-repeat: no-repeat; 
-background-size: 100%;
-}
-</sytle>
+
 </body>
 </html>
